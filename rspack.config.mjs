@@ -29,6 +29,34 @@ const config = {
   experiments: {
     css: true,
   },
+  module: {
+    rules: [
+      {
+        test: /lame\.min\.js/,
+        use: [
+          {
+            loader: 'expose-loader',
+            options: {
+              exposes: 'lamejs',
+            },
+          },
+          // exports-loader with options works in both webpack and rspack
+          // {
+          //   loader: 'exports-loader',
+          //   options: {
+          //     type: 'commonjs',
+          //     exports: 'single|lamejs',
+          //   }
+          // },
+
+          // exports-loader with inline-style options DO NOT work in rspack
+          {
+            loader: 'exports-loader?type=commonjs&exports=single|lamejs',
+          }
+        ],
+      },
+    ]
+  }
 };
 
 export default config;
