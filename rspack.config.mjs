@@ -34,12 +34,6 @@ const config = {
       {
         test: /lame\.min\.js/,
         use: [
-          {
-            loader: 'expose-loader',
-            options: {
-              exposes: 'lamejs',
-            },
-          },
           // exports-loader with options works in both webpack and rspack
           // {
           //   loader: 'exports-loader',

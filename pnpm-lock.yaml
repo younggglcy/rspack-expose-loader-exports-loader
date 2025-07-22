@@ -36,9 +36,6 @@ importers:
       exports-loader:
         specifier: ^5.0.0
         version: 5.0.0(webpack@5.99.9)
-      expose-loader:
-        specifier: ^5.0.1
-        version: 5.0.1(webpack@5.99.9)
       npm-run-all2:
         specifier: ^7.0.2
         version: 7.0.2
@@ -794,12 +791,6 @@ packages:
 
   exports-loader@5.0.0:
     resolution: {integrity: sha512-W15EyyytBwd30yCCieTCqZSCUvU/o3etj2IUItSMjVQEzAf5xOQx8JL9iMo7ERnuAzIA6eapGSFWl7E9F+Wy9g==}
-    engines: {node: '>= 18.12.0'}
-    peerDependencies:
-      webpack: ^5.0.0
-
-  expose-loader@5.0.1:
-    resolution: {integrity: sha512-5YPZuszN/eWND/B+xuq5nIpb/l5TV1HYmdO6SubYtHv+HenVw9/6bn33Mm5reY8DNid7AVtbARvyUD34edfCtg==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       webpack: ^5.0.0
@@ -2482,10 +2473,6 @@ snapshots:
   exports-loader@5.0.0(webpack@5.99.9):
     dependencies:
       source-map: 0.6.1
-      webpack: 5.99.9(webpack-cli@6.0.1)
-
-  expose-loader@5.0.1(webpack@5.99.9):
-    dependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
 
   express@4.21.2:
